@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Progress</title>
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <main class="app">
+    <h1 class="app__title">Progress</h1>
+
+    <section class="app__stage">
+      <div class="app__widget-wrap">
+        <div class="progress-widget" id="widget" data-value="60" data-period="2000"></div>
+      </div>
+
+      <div class="app__controls">
+        <div class="control">
+          <input
+            class="control__value"
+            id="valueInput"
+            type="number"
+            inputmode="numeric"
+            min="0"
+            max="100"
+            step="1"
+            value="0"
+            aria-label="Value">
+          <span class="control__label">Value</span>
+        </div>
+
+        <div class="control">
+          <button class="toggle" id="animateToggle" type="button" role="switch" aria-checked="false" aria-label="Animate">
+            <span class="toggle__knob"></span>
+          </button>
+          <span class="control__label">Animate</span>
+        </div>
+
+        <div class="control">
+          <button class="toggle" id="hideToggle" type="button" role="switch" aria-checked="false" aria-label="Hide">
+            <span class="toggle__knob"></span>
+          </button>
+          <span class="control__label">Hide</span>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <script src="js/progress-widget.js"></script>
+  <script src="js/app.js"></script>
+</body>
+</html>

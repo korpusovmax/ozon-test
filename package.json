@@ -1,0 +1,16 @@
+{
+  "name": "ozon-test",
+  "module": "index.ts",
+  "type": "module",
+  "private": true,
+  "scripts": {
+    "app": "bun run --hot public/index.html"
+  },
+  "devDependencies": {
+    "@types/bun": "latest",
+    "prettier": "3.9.8"
+  },
+  "peerDependencies": {
+    "typescript": "^7"
+  }
+}
